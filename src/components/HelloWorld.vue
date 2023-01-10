@@ -43,15 +43,6 @@ const double_foo = computedAsync(
     </button>
     <div>commputed_double foo {{ double_foo }}</div>
   </div>
-  <div class="card">
-    <!-- watchDebounced -->
-    <div>watchDebounced</div>
-    <input v-model="input" placeholder="Try to type anything..." type="text">
-    <div>Delay is set to 1000ms and maxWait is set to 5000ms for this demo.</div>
-
-    <p>Input: {{ input }}</p>
-    <p>Times Updated: {{ updated }}</p>
-  </div>
 </template>
 
 <style scoped>
