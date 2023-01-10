@@ -2,7 +2,7 @@
  * Copyright (c) 2023 by onepisYa pis1@qq.com, All Rights Reserved. 
  * @Date: 2023-01-10 10:53:31
  * @LastEditors: onepisYa pis1@qq.com
- * @LastEditTime: 2023-01-10 13:32:54
+ * @LastEditTime: 2023-01-10 13:37:20
  * @FilePath: /vue3_vite_js_playground/src/components/HelloWorld.vue
  * 路漫漫其修远兮，吾将上下而求索。
  * @Description: 
@@ -11,7 +11,7 @@
 import {
   ref,
 } from 'vue';
-import { watchDebounced, useDebounceFn, computedAsync } from '@vueuse/core'
+import { useDebounceFn, computedAsync } from '@vueuse/core'
 
 defineProps({
   msg: String,
@@ -31,15 +31,6 @@ const double_foo = computedAsync(
   null,
   { lazy: false, evaluating },
 )
-
-
-
-// 方式二，但是不是使用 computed
-const input = ref('')
-const updated = ref(0)
-watchDebounced(input, () => {
-  updated.value += 1
-}, { debounce: 1000, maxWait: 5000 })
 
 </script>
 
