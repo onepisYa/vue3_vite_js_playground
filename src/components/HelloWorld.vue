@@ -1,12 +1,3 @@
-<!--
- * Copyright (c) 2023 by onepisYa pis1@qq.com, All Rights Reserved. 
- * @Date: 2023-01-10 10:53:31
- * @LastEditors: onepisYa pis1@qq.com
- * @LastEditTime: 2023-01-12 04:40:32
- * @FilePath: /vue3_vite_js_playground/src/components/HelloWorld.vue
- * 路漫漫其修远兮，吾将上下而求索。
- * @Description: 
--->
 <script setup>
 </script>
 
@@ -53,6 +44,7 @@
           </svg>访问</a>
       </div>
       <div class="hidden group-hover:block w-72 absolute left-[46.25rem]">
+        <!-- 不同的屏幕 需要不同的  定位值 所以可以考虑 使用 媒体查询 优化下 比如  sm:left-5 lg:left-20 -->
         <div className='z-10 mt-2 w-72 origin-top-right rounded-md border border-gray-100 bg-white shadow-lg'
           role='menu'>
           <div className='p-2'>
