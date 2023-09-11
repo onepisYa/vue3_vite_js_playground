@@ -3,15 +3,18 @@
     "target": "esnext",
     "module": "esnext",
     "lib": ["dom", "esnext"],
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "incremental": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "allowJs": true, 
-    "checkJs": false
+    "checkJs": false,
+    "allowJs":false
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src/**/*"]
+  "include":[ "src/**/*" ],
+  "typeAcquisition":{
+    "exclude":["/src/**/*.vue"]
+  }
 }
