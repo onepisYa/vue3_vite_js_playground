@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.2.37",
-    "@onepisya/rust-wasm-demo": "^0.1.0"
+    "@onepisya/rust-wasm-demo": "^0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
