@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "@onepisya/rust-wasm-demo": "^0.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
-    "vite": "^3.0.9"
+    "vite": "^3.0.9",
+    "vite-plugin-wasm": "^3.3.0"
   }
 }
