@@ -4,9 +4,14 @@
 import HelloWorld from './components/HelloWorld.vue';
 import WasmAlert from './components/WasmAlert.vue';
 import WasmGame from './components/WasmGame.vue';
+import JsFib from './components/JsFib.vue';
+import WasmFib from './components/WasmFib.vue';
 </script>
 
 <template>
+  <WasmFib :n="43"/>
+  <hr>
+  <JsFib :n="43"/>
   <WasmGame />
   <!-- <WasmAlert /> -->
   <div>

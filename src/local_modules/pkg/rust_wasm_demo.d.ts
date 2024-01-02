@@ -5,6 +5,11 @@
 */
 export function greet(name: string): void;
 /**
+* @param {number} n
+* @returns {number}
+*/
+export function fibonacci(n: number): number;
+/**
 */
 export class Game {
   free(): void;

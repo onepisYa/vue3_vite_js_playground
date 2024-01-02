@@ -199,6 +199,14 @@ function addBorrowedObject(obj) {
     heap[--stack_pointer] = obj;
     return stack_pointer;
 }
+/**
+* @param {number} n
+* @returns {number}
+*/
+export function fibonacci(n) {
+    const ret = wasm.fibonacci(n);
+    return ret >>> 0;
+}
 
 function handleError(f, args) {
     try {
@@ -294,7 +302,7 @@ export function __wbindgen_object_drop_ref(arg0) {
     takeObject(arg0);
 };
 
-export function __wbg_alert_8c7cfab804229a26(arg0, arg1) {
+export function __wbg_alert_fc5f2c9fdb62bfd8(arg0, arg1) {
     alert(getStringFromWasm0(arg0, arg1));
 };
 

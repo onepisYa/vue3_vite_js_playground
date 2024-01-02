@@ -11,5 +11,12 @@ copy from [Game = Rust + WebAssembly + 浏览器 (前端柒八九)](https://mp.w
 
 # Components
 
-- WasmAlert use a greet function from wasm
-- WasmGame a sample snake game
+- WasmAlert uses a greet function from wasm.
+- WasmGame is a sample snake game.
+- WasmFib is a wasm-based fibonacci number generator.
+	- It runs in a web worker.
+	- It displays the current calculating status.
+- JsFib is a fibonacci number generator written in raw JavaScript.
+	- It runs in the main thread.
+	- It cannot display the calculating status because the main thread is blocked.
+	- When the calculation is completed, the calculating status will be reset to false.
